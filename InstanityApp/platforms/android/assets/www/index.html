@@ -46,7 +46,8 @@
 				document.getElementById("bt-camera").style.background = "url(../img/bt-camera_selected.png) no-repeat";
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 					destinationType: Camera.DestinationType.DATA_URL,
-					correctOrientation: true
+					correctOrientation: true,
+					targetWidth: 120
 				});
 			}
 
