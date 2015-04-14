@@ -36,7 +36,10 @@ C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\res \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\spec \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\spec.html \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\css\index _initial_copy.css \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\css\index.css \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\bt-camera.png \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\bt-camera_selected.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\logo.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\js\index.js \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\plugins\org.apache.cordova.camera \

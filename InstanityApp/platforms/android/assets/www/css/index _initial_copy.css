@@ -43,20 +43,19 @@ body {
     padding:0px;
     text-transform:uppercase;
     width:100%;
-	text-align:center;
 }
 
 /* Portrait layout (default) */
 .app {
-    /*background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
-    top:90%;
-    height: 181px;                   /* text area height */
-    width: 450px;                   /* text area width */
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
     text-align:center;
-    /*padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-90px 0px 0px -225px;  /* offset vertical: half of image height and text area height */
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
 }
 
@@ -113,38 +112,4 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#mainImage{
-	position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-	display: none;
-	width: 100%;
-	height: 100%;
-}
-
-#bt-camera {
-    background:url(../img/bt-camera.png) no-repeat; 
-    cursor:pointer;
-    width: 450px;
-    height: 181px;
-    border: none;
-	z-index: 1;
-	position:absolute;
-    left:50%;
-    top:90%;
-	margin:-90px 0px 0px -225px; 
 }
