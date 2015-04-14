@@ -31,8 +31,9 @@
         <title>Hello World</title>
     </head>
     <body>
+		<img id="logo" src="img/instanity.png" width="450px" height="159px"/>
 		<img id="mainImage" src=""/>
-		<button id="bt-camera" onclick="getPicture()"/>
+		<button id="bt-camera" onclick="getPicture()" width="450px" height="181px"/>
         <!--<div class="app">
 			
 
@@ -43,16 +44,17 @@
             app.initialize();
 
 			function getPicture(){
-				document.getElementById("bt-camera").style.background = "url(../img/bt-camera_selected.png) no-repeat";
+				//document.getElementById("bt-camera").style.background = "url(../img/bt-camera_selected.png) no-repeat";
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 					destinationType: Camera.DestinationType.DATA_URL,
 					correctOrientation: true,
-					targetWidth: 120
+					targetWidth: 220
 				});
 			}
 
 			function onSuccess(imageData) {
-				document.getElementById("bt-camera").style.background = "url(../img/bt-camera.png) no-repeat";
+				//document.getElementById("bt-camera").style.background = "url(../img/bt-camera.png) no-repeat";
+				document.getElementById("logo").style.display = "none";
 				var image = document.getElementById('mainImage');
 				image.style.display = "inline";
 				image.src = "data:image/jpeg;base64," + imageData;
