@@ -38,10 +38,15 @@ C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\spec.html \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\css\index _initial_copy.css \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\css\index.css \
-C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\bt-camera.png \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\blue-tint.png \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\bt-camera_blue.png \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\bt-camera_red.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\instanity.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\logo.png \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\purple-blob.png \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\sun-blur.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\js\index.js \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\js\jquery-1.11.2.min.js \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\plugins\org.apache.cordova.camera \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\plugins\org.apache.cordova.camera\www \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\plugins\org.apache.cordova.camera\www\Camera.js \

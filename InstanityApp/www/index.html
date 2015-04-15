@@ -1,50 +1,21 @@
 <!DOCTYPE html>
-<!--
-    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
 
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" type="text/css" href="css/instanity-style.css" />
         <title>Hello World</title>
-    </head>
-    <body>
-		<img id="logo" src="img/instanity.png" width="450px" height="159px"/>
-		<img id="mainImage" src=""/>
-		<button id="bt-camera" onclick="getPicture()" width="450px" height="181px"/>
-        <!--<div class="app">
-			
-
-        </div>-->
-        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
+		
+		<script type="text/javascript">
             app.initialize();
-
+ 
 			function getPicture(){
-				//document.getElementById("bt-camera").style.background = "url(../img/bt-camera_selected.png) no-repeat";
+				
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 					destinationType: Camera.DestinationType.DATA_URL,
 					correctOrientation: true,
@@ -53,16 +24,51 @@
 			}
 
 			function onSuccess(imageData) {
-				//document.getElementById("bt-camera").style.background = "url(../img/bt-camera.png) no-repeat";
+				
 				document.getElementById("logo").style.display = "none";
 				var image = document.getElementById('mainImage');
 				image.style.display = "inline";
 				image.src = "data:image/jpeg;base64," + imageData;
+				
+				
+				
+				var overlay = document.getElementById('overlay');
+				overlay.style.display = "inline";
+				//document.getElementById("body").style.background-color = "#E53C3D";
+				
+				var cameraButton = document.getElementById('bt-camera');
+				cameraButton.style.background = "url(../img/bt-camera_red.png) no-repeat";
+				cameraButton.style.width= "225px";
+				cameraButton.style.left="10%";
+				cameraButton.style.margin="0px 0px 0px 0px";
+				
+				var effectButton = document.getElementById('bt-effect');
+				effectButton.style.display="inline";
 			}
 
 			function onFail(message) {
 				alert('Failed because: ' + message);
 			}
+			
+			function applyEffect() {
+				var myArray = ["img/blue-tint.png", "img/purple-blob.png", "img/sun-blur.png"];
+				var myFilter = myArray[Math.floor(Math.random() * myArray.length)];
+				var addFilter_01 = document.getElementById('overlay');
+				addFilter_01.src = myFilter;
+			}
+			
         </script>
+		
+    </head>
+    <body id="body">
+		<img id="logo" src="img/instanity.png" width="450px" height="159px"/>
+		<img id="overlay"/>
+		<img id="mainImage" src=""/>
+		<button id="bt-camera" onclick="getPicture()" width="225px" height="181px"/>
+		<button id="bt-effect" onclick="applyEffect()" width="225px" height="181px"/>
+		
+
+        
+        
     </body>
 </html>
