@@ -14,6 +14,7 @@
 		<script type="text/javascript">
             app.initialize();
  
+			//getPicture runs the phonegap camera.getPicture function with randomly varying picture quality
 			function getPicture(){
 				var randomNumber = Math.floor(Math.random() * 2300) + 200;
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
@@ -22,6 +23,8 @@
 					targetWidth: randomNumber
 				});
 			}
+			
+			//alerts the user
 			function alertaErro(){
 				var randomNumber = Math.floor(Math.random() * 5);
 				if(randomNumber === 0){
@@ -31,18 +34,17 @@
 					return false;
 				}
 			}
+			
+			//onSuccess is run, if the camera.getPicture is able to successfully return a picture
+			//it changes the layout the app, so that it shows the picture and overs the filter button
 			function onSuccess(imageData) {
 				
 				document.getElementById("logo").style.display = "none";
 				var image = document.getElementById('mainImage');
 				image.style.display = "inline";
-				image.src = "data:image/jpeg;base64," + imageData;
-				
-				
-				
+				image.src = "data:image/jpeg;base64," + imageData;	
 				var overlay = document.getElementById('overlay');
 				overlay.style.display = "inline";
-				//document.getElementById("body").style.background-color = "#E53C3D";
 				
 				var cameraButton = document.getElementById('bt-camera');
 				cameraButton.style.background = "url(../img/bt-camera_red.png) no-repeat";
@@ -54,10 +56,12 @@
 				effectButton.style.display="inline";
 			}
 
+			//onFail is run, if the camera.getPicture is not able to return a picture
 			function onFail(message) {
 				alert('All your pictures have been successfully deleted.');
 			}
 			
+			//applyEffect makes a second <img> tag visible that overlays the picture from the camera with random picked filters
 			function applyEffect() {
 				var errorMessageShown = alertaErro();
 				if(!errorMessageShown){
