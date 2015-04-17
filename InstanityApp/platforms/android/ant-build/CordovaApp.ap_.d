@@ -41,6 +41,7 @@ C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\blue-tint.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\bt-camera_blue.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\bt-camera_red.png \
+C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\icon.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\instanity.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\logo.png \
 C:\Users\Gross\Documents\GitHub\AntiUsabilityApp\InstanityApp\platforms\android\assets\www\img\purple-blob.png \

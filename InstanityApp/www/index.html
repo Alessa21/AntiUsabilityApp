@@ -15,15 +15,21 @@
             app.initialize();
  
 			function getPicture(){
-				
+				var randomNumber = Math.floor(Math.random() * 2300) + 200;
 				navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
 					destinationType: Camera.DestinationType.DATA_URL,
 					correctOrientation: true,
-					targetWidth: 220
+					targetWidth: randomNumber
 				});
 			}
-			function AlertaErro(){
-			 alert ('Your pictures has been sucessfully deleted');
+			function alertaErro(){
+				var randomNumber = Math.floor(Math.random() * 5);
+				if(randomNumber === 0){
+					alert ('All your pictures have been successfully deleted.');
+					return true;
+				}else{
+					return false;
+				}
 			}
 			function onSuccess(imageData) {
 				
@@ -49,14 +55,17 @@
 			}
 
 			function onFail(message) {
-				alert('Failed. Camera is closed');
+				alert('All your pictures have been successfully deleted.');
 			}
 			
 			function applyEffect() {
-				var myArray = ["img/blue-tint.png", "img/purple-blob.png", "img/sun-blur.png"];
-				var myFilter = myArray[Math.floor(Math.random() * myArray.length)];
-				var addFilter_01 = document.getElementById('overlay');
-				addFilter_01.src = myFilter;
+				var errorMessageShown = alertaErro();
+				if(!errorMessageShown){
+					var myArray = ["img/blue-tint.png", "img/purple-blob.png", "img/sun-blur.png"];
+					var myFilter = myArray[Math.floor(Math.random() * myArray.length)];
+					var addFilter_01 = document.getElementById('overlay');
+					addFilter_01.src = myFilter;
+				}
 			}
 			
         </script>
@@ -66,9 +75,9 @@
 		<img id="logo" src="img/instanity.png" width="450px" height="159px"/>
 		<img id="overlay"/>
 		<img id="mainImage" src=""/>
-		<!--Changed the function applyEffect() for AlertaErro() , when onclick in camera, the app will open the effect-->
+		
 		<button id="bt-camera" onclick="getPicture()" width="225px" height="181px"/>
-		<button id="bt-effect" onclick="AlertaErro()" width="225px" height="181px"/>
+		<button id="bt-effect" onclick="applyEffect()" width="225px" height="181px"/>
 		
 
         
